@@ -17,7 +17,7 @@ const titleCased = () => {
 
 function cap (tutorials) {
   return tutorials.map((text) => {
-     return text.split(' ').map((s) => s.charAt(0).toUpperCase()).join(' ')})
+     return text.split(' ').map((s) => s.charAt(0).toUpperCase() + s.substring(1)).join(' ')})
 }
 
 titleCased ();
